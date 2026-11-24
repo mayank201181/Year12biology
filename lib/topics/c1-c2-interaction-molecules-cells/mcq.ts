@@ -701,7 +701,7 @@ export const mcqPapers: Paper[] = [
   // =========================================================================
   {
     id: "c1-c2-interaction-molecules-cells-m3",
-    title: "Paper 3 · HL Inhibition, Chemiosmosis & Cell Signaling [HL]",
+    title: "Set 3 · HL Inhibition, Chemiosmosis & Cell Signaling [HL]",
     level: "HL",
     questions: [
       {

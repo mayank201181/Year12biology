@@ -753,7 +753,7 @@ export const mcqPapers: Paper[] = [
   // ===========================================================================
   {
     id: "d3-d4-continuity-organisms-ecosystems-m3",
-    title: "MCQ Paper 3 — HL Mastery: Nephron, Linked Genes, χ² & Hardy–Weinberg",
+    title: "MCQ Set 3 — HL Mastery: Nephron, Linked Genes, χ² & Hardy–Weinberg",
     level: "HL",
     questions: [
       {

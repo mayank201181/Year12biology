@@ -726,7 +726,7 @@ export const mcqPapers: Paper[] = [
   // =========================================================================
   {
     id: "a3-a4-unity-organisms-ecosystems-m3",
-    title: "MCQ Paper 3 — IB Paper 1A Mastery & HL Synthesis",
+    title: "MCQ Set 3 — IB Paper 1A Mastery & HL Synthesis",
     questions: [
       {
         id: "a3-a4-unity-organisms-ecosystems-m3-q01",
