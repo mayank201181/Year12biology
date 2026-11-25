@@ -20,6 +20,10 @@ export interface TopicMeta {
   title: string;
   strand: Strand;
   icon: string;
+  /** Which IB Diploma year normally finishes this topic (1 = DP1 / Year 12, 2 = DP2 / Year 13). */
+  dpYear: 1 | 2;
+  /** Teaching/revision order used when ?dp=2 is active (DP2 first, then DP1). */
+  dpOrder: number;
   level: IBLevel;
   curriculum: string;
   sections: SectionPlan[];
@@ -39,6 +43,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Theme A (1–2): Unity & Diversity — Molecules & Cells",
     strand: "Theme A: Unity & Diversity",
     icon: "🔬",
+    dpYear: 1,
+    dpOrder: 5,
     level: "SL",
     curriculum: "IB Biology FA2025 A1.1 Water, A1.2 Nucleic acids, A2.1 Origins of cells [HL], A2.2 Cell structure, A2.3 Viruses [HL]",
     sections: [
@@ -73,6 +79,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Theme A (3–4): Unity & Diversity — Organisms & Ecosystems",
     strand: "Theme A: Unity & Diversity",
     icon: "🌿",
+    dpYear: 1,
+    dpOrder: 8,
     level: "SL",
     curriculum: "IB Biology FA2025 A3.1 Diversity of organisms, A3.2 Classification & cladistics [HL], A4.1 Evolution & speciation, A4.2 Conservation",
     sections: [
@@ -109,6 +117,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Theme B (1–2): Form & Function — Molecules & Cells",
     strand: "Theme B: Form & Function",
     icon: "🧫",
+    dpYear: 1,
+    dpOrder: 6,
     level: "SL",
     curriculum: "IB Biology FA2025 B1.1 Carbs & lipids, B1.2 Proteins, B2.1 Membranes, B2.2 Organelles, B2.3 Cell specialization",
     sections: [
@@ -143,6 +153,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Theme B (3–4): Form & Function — Organisms & Ecosystems",
     strand: "Theme B: Form & Function",
     icon: "🫀",
+    dpYear: 2,
+    dpOrder: 1,
     level: "SL",
     curriculum: "IB Biology FA2025 B3.1 Gas exchange, B3.2 Transport, B3.3 Muscle & motility [HL], B4.1 Adaptation, B4.2 Niches",
     sections: [
@@ -179,6 +191,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Theme C (1–2): Interaction & Interdependence — Molecules & Cells",
     strand: "Theme C: Interaction & Interdependence",
     icon: "⚡",
+    dpYear: 1,
+    dpOrder: 7,
     level: "SL",
     curriculum: "IB Biology FA2025 C1.1 Enzymes, C1.2 Respiration, C1.3 Photosynthesis, C2.1 Chemical signaling [HL], C2.2 Neural signaling",
     sections: [
@@ -213,6 +227,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Theme C (3–4): Interaction & Interdependence — Organisms & Ecosystems",
     strand: "Theme C: Interaction & Interdependence",
     icon: "🛡️",
+    dpYear: 2,
+    dpOrder: 2,
     level: "SL",
     curriculum: "IB Biology FA2025 C3.1 Integration of systems, C3.2 Defense against disease, C4.1 Populations & communities, C4.2 Energy & matter",
     sections: [
@@ -249,6 +265,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Theme D (1–2): Continuity & Change — Molecules & Cells",
     strand: "Theme D: Continuity & Change",
     icon: "🧬",
+    dpYear: 2,
+    dpOrder: 3,
     level: "SL",
     curriculum: "IB Biology FA2025 D1.1 DNA replication, D1.2 Protein synthesis, D1.3 Mutations, D2.1 Cell division, D2.2 Gene expression [HL], D2.3 Water potential",
     sections: [
@@ -283,6 +301,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Theme D (3–4): Continuity & Change — Organisms & Ecosystems",
     strand: "Theme D: Continuity & Change",
     icon: "🌍",
+    dpYear: 2,
+    dpOrder: 4,
     level: "SL",
     curriculum: "IB Biology FA2025 D3.1 Reproduction, D3.2 Inheritance, D3.3 Homeostasis, D4.1 Natural selection, D4.2 Stability, D4.3 Climate change",
     sections: [
